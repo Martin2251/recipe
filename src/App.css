@@ -1,38 +1,334 @@
+body {
+  font-family: "Merriweather", serif;
+}
+.title {
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 80px;
+  color: #f52878;
+}
 .App {
+  display: flex;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.container-recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#search-bar {
+  border-radius: 0px;
+  display: block;
+  width: 70%;
+  border: solid hsl(337, 92%, 62%, 0.4) 2px;
+  height: 50px;
+  margin-top: 0px;
+  font-size: larger;
+  cursor: pointer;
+}
+input {
+  text-decoration: none;
+  color: springgreen;
+  border-width: 0px;
+}
+#search-bar:hover {
+  background-color: beige;
+}
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+.recipe-btn {
+  border-radius: 5px;
+  border: solid hsl(337, 92%, 62%) 1px;
+  color: white;
+  background-color: #f52878;
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+.recipe-btn:hover {
+  background-color: #e90b62;
+}
+.container-search {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+.search-btn {
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: solid hsl(337, 92%, 62%) 1px;
+  color: white;
+  background-color: #f52878;
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 200px;
+  margin-left: 20px;
+}
+.search-btn:hover {
+  background-color: #e90b62;
+}
+.box {
+  display: flex;
+  font-size: 20px;
+  padding: 1rem;
+  margin-top: 30px;
+  height: 100px;
+  justify-content: space-around;
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 1rem;
+  font-size: 20px;
+}
+.header-link {
+  color: black;
+
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+}
+.nav-item-btn {
+  margin-top: 10px;
+}
+.header-link-home {
+  color: #e90b62;
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+}
+.header-link-btn {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px;
+  color: white;
+  background-color: #f52878;
+  cursor: pointer;
+  width: 100px;
+}
+.header-link-btn:hover {
+  background-color: #f52878;
+}
+footer {
+  margin-top: 150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #fee9f1;
+  background-color: black;
+}
+
+.footer-list {
+  padding-left: 0;
+  color: #fee9f1;
+  line-height: 2rem;
+}
+.footer-list li {
+  padding-left: 0;
+}
+.footer-link {
+  color: #f52878;
+}
+li {
+  list-style: none;
+}
+.subtitle {
+  font-size: 50px;
+  font-family: "Merriweather", serif;
+  color: #f52878;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.second-main {
+  display: flex;
+  height: 600px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.second-main-p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: lighter;
+}
+.photo-sign-up {
+  height: auto;
+  max-width: 100%;
+  padding-right: 30px;
+}
+.btns {
+  text-align: center;
+}
+.btn-1 {
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: solid hsl(337, 92%, 62%) 1px;
+  color: white;
+  background-color: #f52878;
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 200px;
+  margin-left: 20px;
+}
+.btn-1:hover {
+  background-color: #fee9f1;
+  color: #e90b62;
+}
+.btn-2 {
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: solid hsl(337, 92%, 62%) 1px;
+  background-color: #fee9f1;
+  color: #f52878;
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 200px;
+  margin-left: 20px;
+}
+.btn-2:hover {
+  background-color: #e90b62;
+  color: #fee9f1;
+}
+.about-photo {
+  height: 100vh;
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-scris {
+  color: #e90b62;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 70px;
+  background-color: rgba(251, 251, 251, 0.3);
+  max-width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.who-we-are {
+  font-size: 1.5rem;
+  color: #e90b62;
+  font-weight: 700;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-us-container {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #fee9f1;
+  height: 500px;
+}
+.about-us {
+  width: 50%;
+}
+.about-us-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.partners-div {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #f46d00;
+}
+.before-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e90b62;
+  height: 200px;
+  font-weight: 900;
+  flex-grow: 2;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: #fee9f1;
+  height: 40rem;
+}
+.input-name {
+  width: 150px;
+  border: #f52878 solid 1px;
+  height: 4rem;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 10px;
+}
+.input-surname {
+  width: 150px;
+  border: #f52878 solid 1px;
+  height: 4rem;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 10px;
+}
+.input-email {
+  width: 250px;
+  border: #f52878 solid 1px;
+  height: 4rem;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 10px;
+}
+.input-message {
+  width: 250px;
+  border: #f52878 solid 1px;
+  height: 20rem;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.send-btn {
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../../Images/about.jpg";
+import about from "../../Images/about.jpeg";
 
 function TitleCardRecipe(props) {
   return (
